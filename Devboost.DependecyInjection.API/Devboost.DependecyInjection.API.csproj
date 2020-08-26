@@ -8,5 +8,10 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Devboost.DependecyInjection.DomainService\Devboost.DependecyInjection.DomainService.csproj" />
+    <ProjectReference Include="..\Devboost.DependecyInjection.Domain\Devboost.DependecyInjection.Domain.csproj" />
+  </ItemGroup>
+
 
 </Project>
