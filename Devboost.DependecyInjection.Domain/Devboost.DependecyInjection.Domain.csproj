@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Interface\DomainService\" />
     <Folder Include="Interface\Repository\" />
   </ItemGroup>
 
