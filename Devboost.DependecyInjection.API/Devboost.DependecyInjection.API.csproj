@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Devboost.DependecyInjection.DomainService\Devboost.DependecyInjection.DomainService.csproj" />
     <ProjectReference Include="..\Devboost.DependecyInjection.Domain\Devboost.DependecyInjection.Domain.csproj" />
+    <ProjectReference Include="..\Devboost.DependecyInjection.Repository\Devboost.DependecyInjection.Repository.csproj" />
   </ItemGroup>
 
 
