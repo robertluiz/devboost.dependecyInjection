@@ -4,13 +4,11 @@ using System.Text;
 
 namespace Devboost.DependecyInjection.Domain.Entidades
 {
-    public class Produto : EntidadeBase
+    public class Produto : EntidadeBase<int>
     {
 
-        public int Id { get; set; }
+        public string Nome { get; set; }
 
-        public string NomeProduto { get; set; }
-
-        public int  valor { get; set; }
+        public decimal  Valor { get; set; }
     }
 }
