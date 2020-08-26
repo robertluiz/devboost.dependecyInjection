@@ -1,11 +1,11 @@
 ﻿using Devboost.DependecyInjection.Domain.Entidades;
-using Devboost.DependecyInjection.Domain.Interface.Repository;
+using Devboost.DependecyInjection.Domain.Interface.DomainService;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Devboost.DependecyInjection.Repository
+namespace Devboost.DependecyInjection.DomainService
 {
-    public class ClienteRepository : IClienteRepository
+    public class ClienteDomainService : IClienteDomainService
     {
         public Task<List<Cliente>> Listar()
         {
