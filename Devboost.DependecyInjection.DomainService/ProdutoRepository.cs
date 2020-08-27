@@ -3,11 +3,11 @@ using Devboost.DependecyInjection.Domain.Interface.Repository;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Devboost.DependecyInjection.Repository
+namespace Devboost.DependecyInjection.DomainService
 {
-    public class ClienteRepository : IClienteRepository
+    public class ProdutoRepository : IProdutoRepository
     {
-        public Task<List<Cliente>> Listar()
+        public Task<List<Produto>> Listar()
         {
             throw new System.NotImplementedException();
         }
