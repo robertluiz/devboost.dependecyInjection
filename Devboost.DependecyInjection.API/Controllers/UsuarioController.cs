@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Devboost.DependecyInjection.API.Controllers
 {
+    [Route("v1/cliente")]
+    [ApiController]
     public class UsuarioController : Controller
     {
         private readonly IClienteDomainService _clienteService;
@@ -14,6 +16,7 @@ namespace Devboost.DependecyInjection.API.Controllers
         }
 
         // GET
+        [HttpGet("listar")]
         public async Task<IActionResult> Listar()
         {
             var clientes = await _clienteService.Listar();
