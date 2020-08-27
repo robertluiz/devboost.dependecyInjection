@@ -7,16 +7,19 @@ namespace Devboost.DependecyInjection.Repository
 {
     public class ProdutoRepository : IProdutoRepository
     {
-        private readonly IProdutoRepository _produtoRepository;
-
-        public ProdutoRepository(IProdutoRepository produtoRepository)
-        {
-            _produtoRepository = produtoRepository;
-        }
-
         public Task<List<Produto>> Listar()
         {
-            throw new System.NotImplementedException();
+            var listaProduto = new List<Produto>()
+            {
+                new Produto
+                {
+                    Id = 1,
+                    Nome = "Produto 1",
+                    Valor = 10
+                }
+            };
+
+            return Task.Factory.StartNew(() => listaProduto);
         }
     }
 }
