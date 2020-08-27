@@ -1,9 +1,7 @@
 ﻿using Devboost.DependecyInjection.Domain.Entidades;
 using Devboost.DependecyInjection.Domain.Interface.DomainService;
 using Devboost.DependecyInjection.Domain.Interface.Repository;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Devboost.DependecyInjection.DomainService
