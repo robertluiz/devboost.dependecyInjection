@@ -6,11 +6,11 @@ namespace Devboost.DependecyInjection.API.Controllers
 {
     [Route("v1/cliente")]
     [ApiController]
-    public class UsuarioController : Controller
+    public class ClienteController : Controller
     {
         private readonly IClienteDomainService _clienteService;
 
-        public UsuarioController(IClienteDomainService clienteService)
+        public ClienteController(IClienteDomainService clienteService)
         {
             _clienteService = clienteService;
         }
